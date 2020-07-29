@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWk-0U-JS1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8yg-gB-PuM">
+            <objects>
+                <viewController id="ZZu-4Y-gkY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fsb-3Y-snD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XIq-e4-PUS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8rB-7X-HRB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IyB-T0-TDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="654"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="yay-TI-mMy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oWk-0U-JS1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="found-n" selectedImage="found-p" id="R9L-ZI-dKe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YT1-Nw-AOl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZZu-4Y-gkY" kind="relationship" relationship="rootViewController" id="Iky-pq-WST"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U46-Dp-IRm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="654"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="found-n" width="25" height="19"/>
+        <image name="found-p" width="25" height="19"/>
+    </resources>
+</document>
