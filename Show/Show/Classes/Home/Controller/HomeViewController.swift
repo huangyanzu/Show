@@ -39,7 +39,7 @@ extension HomeViewController {
         navigationItem.titleView = searchBar
         searchBar.searchBarStyle = .minimal
         
-        let searchFiled = searchBar.value(forKey: "_searchField") as? UITextField
+        let searchFiled = searchBar.value(forKey: "searchField") as? UITextField
         searchFiled?.textColor = UIColor.white
         
         navigationController?.navigationBar.barTintColor = UIColor.black
@@ -84,6 +84,9 @@ extension HomeViewController {
         for dict in dataArray {
             tempArray.append(HomeType(dict: dict))
         }
+        
+        print(tempArray[0].title)
+        
         return tempArray
     }
 }

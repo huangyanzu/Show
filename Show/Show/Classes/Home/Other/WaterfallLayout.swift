@@ -60,7 +60,7 @@ extension WaterfallLayout {
             
             // 4.取出最小列的位置
             var minH = colHeights.min()!
-            let index = colHeights.index(of: minH)!
+            let index = colHeights.firstIndex(of: minH)!
             minH = minH + height + minimumLineSpacing
             colHeights[index] = minH
             

@@ -7,6 +7,8 @@
 //  MVVM --> M(model)V(View)C(Controller网络请求/本地存储数据(sqlite)) --> 网络请求
 // ViewModel : RAC/RxSwift
 
+//http://qf.56.com/home/v4/moreAnchor.ios?type=0&index=1&size=48
+
 import UIKit
 
 class HomeViewModel {

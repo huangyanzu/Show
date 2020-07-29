@@ -40,6 +40,7 @@ class AnchorViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        
         loadData(index: 0)
     }
     
@@ -63,6 +64,7 @@ extension AnchorViewController {
 
 // MARK:- collectionView的数据源&代理
 extension AnchorViewController : UICollectionViewDataSource, WaterfallLayoutDataSource, UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return homeVM.anchorModels.count
     }
@@ -87,4 +89,7 @@ extension AnchorViewController : UICollectionViewDataSource, WaterfallLayoutData
     func waterfallLayout(_ layout: WaterfallLayout, indexPath: IndexPath) -> CGFloat {
         return indexPath.item % 2 == 0 ? kScreenW * 2 / 3 : kScreenW * 0.5
     }
+    
+    
+   
 }
